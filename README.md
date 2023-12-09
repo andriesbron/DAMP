@@ -1,1 +1,26 @@
 # DAMP
+
+A Docker application for Apache, PHP, Mysql and PhpMyadmin.
+
+This docker compose application allows you to easily switch the php version as well as rather easily install additional php modules for your application.
+
+ATTENTION: For development purposes only, don't use this on a production server. 
+
+# How it works
+
+clone and cd into this directory, then:
+docker compose up
+and point your browser to http://localhost:8000
+
+# initial database
+
+If you uncomment the line:
+./mysql/maindb.sql:/docker-entrypoint-initdb.d/maindb.sql
+you can initialize the database by placing an sql file called "maindb.sql" in the subdirectory "mysql". 
+
+For example, export your Joomla! database to mysql, then, copy all the Joomla! php files to the html directory and place the sql you just exported as described. Start up the docker and have your 
+
+# Collaboration
+
+Fork this repo, add your functionality and send me a pull request.
+
