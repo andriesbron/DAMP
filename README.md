@@ -12,6 +12,12 @@ clone and cd into this directory, then:
 docker compose up
 and point your browser to http://localhost:8000
 
+# Configuring your site with mysql
+
+Take notice that in order to connect the mysql database to your website, the mysql host is "mysql" and not "localhost". For example, the configuration.php of a Joomla! installation the reference to the mysql host should be as follows:
+
+    public $host = "mysql";
+
 # initial database
 
 If you uncomment the line:
