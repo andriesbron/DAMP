@@ -24,7 +24,7 @@ If you uncomment the line:
 ./mysql/maindb.sql:/docker-entrypoint-initdb.d/maindb.sql
 you can initialize the database by placing an sql file called "maindb.sql" in the subdirectory "mysql". 
 
-For example, export your Joomla! database to mysql, then, copy all the Joomla! php files to the html directory and place the sql you just exported as described. Start up the docker and have your 
+For example, export your Joomla! database to mysql, then, copy all the Joomla! php files to the html directory and place the sql you just exported as described. Start up the docker and have your database initialized with the sql file.
 
 # Collaboration
 
