@@ -9,7 +9,7 @@ ATTENTION: For development purposes only, don't use this on a production server.
 # How it works
 
 clone and cd into this directory, then:
-docker compose up
+    docker compose up
 and point your browser to http://localhost:8000
 
 # Configuring your site with mysql
