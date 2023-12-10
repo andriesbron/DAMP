@@ -9,6 +9,7 @@ services:
     networks:
       - backend
     command:
+      # postgresql: apt-get install -y php5-pgsql
       - /bin/sh
       - -c
       - |
@@ -16,6 +17,7 @@ services:
         apt-get update \
             && apt-get install -y libzip-dev \
             && docker-php-ext-install zip
+        
         apachectl -D FOREGROUND
  
   mysql:
