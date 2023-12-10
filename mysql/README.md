@@ -1,4 +1,4 @@
-# Persisten store
+# Persistent store
 
 Persitent store will be generated in the persist directory that is created upon running the container.
 
